@@ -87,7 +87,7 @@
               <div class="month-text">APR<div class="day-text">18</div></div>
               <div class="location-text">CRISLER CENTER</div>
               <div class="city-text">Ann Arbor, MI</div>
-              <div id="auto"><a href="#" class="large button">TICKETS</a></div>
+              <div class="auto"><a href="#" class="large button">TICKETS</a></div>
               </div>
 
 
@@ -95,14 +95,14 @@
               <div class="month-text">APR<div class="day-text">19</div></div>
               <div class="location-text">LOST LAKES AMPITHEATRE</div>
               <div class="city-text">Oklahoma City, OK</div>
-              <div id="auto"><a href="#" class="large button">TICKETS</a></div>
+              <div class="auto"><a href="#" class="large button">TICKETS</a></div>
               </div>
 
               <div class="flex-grid">
               <div class="month-text">APR<div class="day-text">22</div></div>
               <div class="location-text">POZO SALOON</div>
               <div class="city-text">Santa Margarita, CA</div>
-              <div id="auto"><a href="#" class="large button">TICKETS</a></div>
+              <div class="auto"><a href="#" class="large button">TICKETS</a></div>
               </div>
 
 
@@ -110,14 +110,14 @@
               <div class="month-text">APR<div class="day-text">23</div></div>
               <div class="location-text">MULLINS CENTER</div>
               <div class="city-text">Amherst, MA</div>
-              <div id="auto"><a href="#" class="large button">TICKETS</a></div>
+              <div class="auto"><a href="#" class="large button">TICKETS</a></div>
               </div>
 
               <div class="flex-grid">
               <div class="month-text">APR<div class="day-text">28</div></div>
               <div class="location-text">LIACOURAS CENTER</div>
               <div class="city-text">Philadelphia,PA</div>
-              <div id="auto"><a href="#" class="large button">TICKETS</a></div>
+              <div class="auto"><a href="#" class="large button">TICKETS</a></div>
               </div>
             </div>
           </div>
@@ -126,8 +126,17 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <center>
-      <div id="auto"><a href="#" class="large button">SUBMIT</a></div></center>
+
+          <center>
+            <div class="flex-grid-form">
+            <label>Input Label</label>
+            <input type="email" placeholder="EMAIL ADDRESS*" />
+            <label>Input Label</label>
+            <input type="text" pattern="[0-9]{5}" placeholder="ZIP CODE*" />
+          </div>
+        </center>
+
+      <center><div class="auto" id="submit"><a href="#" class="large button">SUBMIT</a></div></center>
     <ul class="top-bar">
       <ol>@ 2017 DEF JAM RECORDS</ol>
       <ol>TERMS & CONDITIONS</ol>
@@ -141,4 +150,5 @@
     <ol><a href="#" class="fa fa-envelope"></a></ol>
     </ul>
   </body>
+  <script src="index.js"></script>
 </html>
