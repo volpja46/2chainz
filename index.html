@@ -82,7 +82,6 @@
             <div class="column-3">
               <div class="flex-grid">
               <h1 class="smaller-orange-header">TOUR DATES</h1></div>
-
               <div class="flex-grid">
               <div class="month-text">APR<div class="day-text">18</div></div>
               <div class="location-text">CRISLER CENTER</div>
@@ -127,16 +126,30 @@
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
 
-          <center>
-            <div class="flex-grid-form">
-            <label>Input Label</label>
-            <input type="email" placeholder="EMAIL ADDRESS*" />
-            <label>Input Label</label>
-            <input type="text" pattern="[0-9]{5}" placeholder="ZIP CODE*" />
-          </div>
-        </center>
 
-      <center><div class="auto" id="submit"><a href="#" class="large button">SUBMIT</a></div></center>
+            <div id="flex-grid-form">
+            <label>Input Label</label>
+            <input id="email" type="email" placeholder="EMAIL ADDRESS*" />
+            <label>Input Label</label>
+            <input id="zip-code" type="text" pattern="[0-9]{5}" placeholder="ZIP CODE*" />
+            <span id="errorname"></span>
+            <p id="small-orange-text">
+              SUBSCRIBE TO EMAIL UPDATES FROM:
+            </p>
+            <p id="small-white-text">
+          <i class="fa fa-check" aria-hidden="true"></i>2 CHAINZ 
+          <i class="fa fa-check" aria-hidden="true"></i>DEF JAM RECORDS
+          <i class="fa fa-check" aria-hidden="true"></i>
+UNIVERSAL MUSIC GROUP
+            </p>
+            <p id="small-grey-text">
+              By selecting submit you agree to the Universal Music Group privacy policy.
+            </p>
+            <br /><div id="submit"><a href="#" class="large button">SUBMIT</a></div>
+          </div>
+          <span id="successMessage"></span>
+
+
     <ul class="top-bar">
       <ol>@ 2017 DEF JAM RECORDS</ol>
       <ol>TERMS & CONDITIONS</ol>

@@ -52,6 +52,16 @@ html {
 /**
      * Remove the margin in all browsers (opinionated).
      */
+
+ span {
+   color: red;
+   font-weight: bold;
+   display: inline-block;
+   text-align: center;
+   vertical-align: center;
+   font-size: 18px;
+   }
+
 body {
   margin: 0;
   background-color: black;}
@@ -68,6 +78,25 @@ body {
 
   input:focus:invalid {
     outline: none;
+  }
+
+  #small-orange-text {
+    font-size: 14px;
+    color: orange !important;
+  }
+
+  #small-white-text {
+    font-size: 14px;
+    color: white;
+  }
+
+  #small-grey-text {
+    font-size: 14px;
+    color: grey;
+  }
+
+  .fa fa-check {
+    border-top: 1px !important;
   }
 
 /**
@@ -102,6 +131,12 @@ h1 {
   .auto {
     flex: 3;
     padding-right: 0;
+  }
+
+  #submit {
+    display: block !important;
+    text-align: center;
+    margin-left: 1em;
   }
 
   .day-text {
@@ -159,10 +194,11 @@ img {
     margin-right: 0em;
   }
 
-  .flex-grid-form {
-    display: flex;
+  #flex-grid-form {
+    display: block;
+    margin: auto;
     justify-content: space-between;
-    width: 80%;
+    width: 50%;
     margin-bottom: 0.5em;
     text-align: center;
     vertical-align: center;
@@ -171,6 +207,9 @@ img {
   input{
    text-align:center;
    color: white !important;
+   border-top: none !important;
+   border-right: none !important;
+   border-left: none !important;
 }
 
 
