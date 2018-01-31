@@ -1,8 +1,14 @@
-var form = document.getElementById("submit");
+var submitButton = document.getElementById("submit");
 var email = document.getElementById("auto");
 var error = document.querySelector(".error");
+var buttons = document.querySelectorAll("a.large.button");
 
-form.addEventListener("click", event => {
+buttons.forEach(button => {
+  button.addEventListener("click", function(ev) {
+    ev.preventDefault();
+  });
+});
+
+submitButton.addEventListener("click", event => {
   event.preventDefault();
-  console.log("hi");
 });
