@@ -87,12 +87,12 @@ h1 {
     font-family: Georgia, serif;
     color: orange;
     vertical-align: sub;
-    flex: 0.5;
+    flex: 1;
     text-align: center;
   }
 
   #auto {
-    flex: 1;
+    flex: 3;
     padding-right: 0;
   }
 
@@ -109,14 +109,14 @@ h1 {
     font-size: 18px !important;
     font-weight: bold;
     font-family: Arial, serif;
-    flex: 3;
+    flex: 4;
   }
 
   .city-text {
     color: grey;
     font-size: 18px !important;
     font-family: Arial, serif;
-    flex: 2;
+    flex: 4;
   }
 
   .column-2 {
@@ -3264,8 +3264,9 @@ a.button:hover, a.button:focus {
   position: relative;
   margin: 0 0 1rem 0;
   padding-bottom: 6em;
+  background-repeat: no-repeat;
   background-image: url("https://i.imgur.com/dNLnoAQ.jpg");
-  border-radius: 3px;
+  border-radius: 0px;
   background-color: black;
   color: #0a0a0a; }
   .callout > :first-child {
