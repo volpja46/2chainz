@@ -1,7 +1,10 @@
-var submitButton = document.getElementById("submit");
-var buttons = document.querySelectorAll("a.large.button");
-var form = document.getElementById("flex-grid-form");
-var successMessage = document.getElementById("successMessage");
+const submitButton = document.getElementById("submit");
+const buttons = document.querySelectorAll("a.large.button");
+const form = document.getElementById("flex-grid-form");
+const email = document.getElementById("email");
+const zipCode = document.getElementById("zip-code");
+const errorMessage = document.getElementById("errorname");
+const successMessage = document.getElementById("successMessage");
 
 buttons.forEach(button => {
   button.addEventListener("click", function(ev) {
@@ -25,7 +28,3 @@ function check(event) {
     successMessage.innerText = "Thank you for submittng!";
   }
 }
-
-var email = document.getElementById("email");
-var zipCode = document.getElementById("zip-code");
-var errorMessage = document.getElementById("errorname");
