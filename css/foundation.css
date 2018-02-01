@@ -93,10 +93,7 @@ body {
   #small-grey-text {
     font-size: 14px;
     color: grey;
-  }
-
-  .fa fa-check {
-    border-top: 1px !important;
+    font-weight: bold;
   }
 
 /**
@@ -126,6 +123,23 @@ h1 {
     vertical-align: sub;
     flex: 1;
     text-align: center;
+  }
+
+  .songnum-text {
+    font-size: 15px !important;
+    font-family: Georgia, serif;
+    color: orange;
+    flex: 0.5;
+    text-align: center;
+  }
+
+  .song-text {
+    color: white;
+    font-size: 12px !important;
+    font-family: Arial, serif;
+    flex: 4;
+    text-align: left;
+    margin: auto;
   }
 
   .auto {
@@ -162,10 +176,24 @@ h1 {
     flex: 4;
   }
 
-  .column-2 {
-      width: 70%;
+  .column-4 {
+      width: 150%;
       margin-top: 2em;
       margin-bottom: 2em;
+      margin-left: 2em;
+  }
+
+  .column-2 {
+      width: 100%;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 20em;
+  }
+
+  .column-5 {
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .column-3 {
@@ -179,11 +207,12 @@ img {
 }
 
 
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+.song-grid {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-bottom: 0.7em;
+  align-items: center !important;
 }
 
   .flex-grid {
@@ -234,10 +263,46 @@ figure {
      * 1. Add the correct box sizing in Firefox.
      * 2. Show the overflow in Edge and IE.
      */
+     #white-header2 {
+       font-size: 30px;
+       text-align: left !important;
+       color: white;
+       font-weight: bold;
+       font-family: Georgia, serif;
+       display: block !important;
+     }
+
+     #white-song-text {
+       font-size: 8px;
+       color: white;
+       font-weight: bold;
+       font-family: Arial, serif;
+       flex: 20;
+       text-align: center;
+     }
+
+     #orange-song-text {
+       font-size: 12px;
+       color: orange;
+       font-weight: bold;
+       font-family: Arial, serif;
+       flex: 1;
+       text-align: center;
+     }
+
+     #orange-header2 {
+       color: orange;
+       font-family: "Arial", serif;
+       font-weight: bold;
+       font-size: 18px;
+       margin: auto;
+       text-align: left;
+       letter-spacing: .2em;
+     }
 
    .orange-header {
      font-size: 50px !important;
-     padding-left: 10px;
+     padding-left: 50px;
      letter-spacing: 0.1em;
      text-align: left;
      background: -webkit-linear-gradient(orange, black);
@@ -496,6 +561,7 @@ input {
 [type="radio"] {
   box-sizing: border-box;
   /* 1 */
+
   padding: 0;
   /* 2 */ }
 
@@ -658,6 +724,8 @@ select {
   border-radius: 3px; }
 
   .grid {
+    margin-left: 3em;
+    margin-right: 3em;
     display: inline-grid;
     vertical-align: center;
     grid-template-columns: 2fr 2fr;
@@ -667,7 +735,7 @@ select {
     }
   .grid > article {
     max-width: 100%;
-    height: 250px;
+    height: 220px;
   }
   .grid > article img {
     max-width: 100%;
@@ -777,7 +845,7 @@ h6, .h6 {
 h1, .h1 {
   font-size: 55px !important;
   font-family: Georgia, Times, "Times New Roman", serif;
-  line-height: 1.6;
+  line-height: 1.0;
   font-weight: bold;
   text-align: center;
   margin-top: 0;
@@ -3326,7 +3394,7 @@ a.button:hover, a.button:focus {
   margin: 0 0 0rem 0;
   padding-bottom: 6em;
   background-repeat: no-repeat;
-  background-image: url("https://i.imgur.com/dNLnoAQ.jpg");
+  background-image: url("https://i.imgur.com/dNLnoAQ.jpg?1");
   border-radius: 0px;
   background-color: black;
   color: #0a0a0a; }
