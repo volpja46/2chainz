@@ -5,11 +5,18 @@ const email = document.getElementById("email");
 const zipCode = document.getElementById("zip-code");
 const errorMessage = document.getElementById("errorname");
 const successMessage = document.getElementById("successMessage");
+const listenNow = document.getElementById("listen-now");
+const songGrid = document.getElementById("song-grid");
 
 buttons.forEach(button => {
   button.addEventListener("click", function(ev) {
     ev.preventDefault();
   });
+});
+
+listenNow.addEventListener("click", event => {
+  event.preventDefault();
+  songGrid.scrollIntoView();
 });
 
 submitButton.addEventListener("click", event => {
