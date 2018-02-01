@@ -147,6 +147,13 @@ h1 {
     padding-right: .5em;
   }
 
+  .music-buttons {
+    display:inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 110% ;
+  }
+
 
   #submit {
     display: block !important;
@@ -186,7 +193,7 @@ h1 {
      width: 70%;
      margin-top: 2em;
      margin-bottom: 2em;
-     margin-left: 15em;
+     margin-left: 13em;
    }
 
   .column-3 {
@@ -254,12 +261,14 @@ figure {
   margin: 1em 40px; }
 
      #white-header2 {
-       font-size: 30px;
+       font-size: 27px;
        text-align: left !important;
        color: white;
        font-weight: bold;
        font-family: Georgia, serif;
        display: block !important;
+       margin-left: 0;
+       margin-bottom: 0;
      }
 
      #white-song-text {
@@ -479,7 +488,7 @@ select {
 
   .grid {
     margin-left: 3em;
-    margin-right: 3em;
+    margin-right: 2em;
     display: inline-grid;
     vertical-align: center;
     grid-template-columns: 2fr 2fr;
@@ -586,13 +595,17 @@ h3, .h3 {
     color: #cacaca; }
 
 h1, .h1 {
-  font-size: 55px !important;
+  font-size: 70px !important;
   font-family: Georgia, Times, "Times New Roman", serif;
   line-height: 1.0;
   font-weight: bold;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0.5rem; }
+  background: -webkit-linear-gradient(orange,black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  vertical-align: center !important;
+ }
 
 h2, .h2 {
   font-size: 1.25rem;
@@ -1788,8 +1801,6 @@ a.button:hover, a.button:focus {
     .menu.icon-top li a i,
     .menu.icon-top li a svg {
       -ms-flex-item-align: stretch;
-          -ms-grid-row-align: stretch;
-          align-self: stretch;
       margin-bottom: 0.25rem;
       text-align: center; }
   .menu.icon-bottom li a {
@@ -3976,9 +3987,9 @@ a.thumbnail {
   .large-offset-2 {
     margin-left: 16.66667%; }
   .large-4 {
-    margin-left: 55em;
-    margin-top: 20em;
+    margin-top: 30em;
     margin-bottom: 15em;
+    margin-left: 50em;
    }
   .large-offset-3 {
     margin-left: 25%; }
